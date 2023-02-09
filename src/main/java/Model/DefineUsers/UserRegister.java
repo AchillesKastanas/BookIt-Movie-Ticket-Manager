@@ -6,27 +6,28 @@ public class UserRegister extends Users{
         return username;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     private final String username;
     private final String email;
     private final String password;
-    private final String confirmPassword;
+    private final String phoneNumber;
 
-    public UserRegister(String username,String email,String password,String confirmPassword)
+    public UserRegister(String username,String email,String password,String phoneNumber)
     {
         this.username=username;
         this.email=email;
         this.password=password;
-        this.confirmPassword=confirmPassword;
+        this.phoneNumber = phoneNumber;
     }
 
-    @Override
     public String getEmail() {
         return email;
     }
+
+
 
     @Override
     public String getPassword() {
@@ -35,6 +36,6 @@ public class UserRegister extends Users{
 
     @Override
     public String toString() {
-        return "{\"name\":\"" + this.getUsername() + "\",\"email\":\"" + this.getEmail() + "\",\"password\":\"" + this.getPassword() + "\",\"confirmPassword\":\"" + this.getConfirmPassword() + "\"}";
+        return "{\"name\":\"" + this.getUsername() + "\",\"email\":\"" + this.getUsername() + "\",\"password\":\"" + this.getPassword() + "\",\"confirmPassword\":\"" + this.getPhoneNumber() + "\"}";
     }
 }

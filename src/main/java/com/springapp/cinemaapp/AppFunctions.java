@@ -10,4 +10,7 @@ public class AppFunctions {
     public String helloWorld(){
         return "Hello world from spring";
     }
+
+    //Login user Users login= UserFactory.getUsers(new LoginProc(email,pass));
+    //Register a user  Users register=UserFactory.getUsers(new Registration(fullname,emailReg,passReg,passConf));
 }
